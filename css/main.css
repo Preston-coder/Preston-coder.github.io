@@ -273,6 +273,11 @@ footer .footer-below {
   max-height: 600px;
   overflow-y: scroll;
 }
+.fixed-panel-50k {
+  min-height: 300px;
+  max-height: 300px;
+  overflow-y: scroll;
+}
 
 .img-fixed {
   max-height: 240px;
