@@ -100,7 +100,7 @@
             Tagging-Retrieval-Captioning
           </span>-->
           <!--<hr class="star-light">-->
-          <span class="skills">¹Renmin University of China<br>²Tencent</span>
+          <span class="skills">¹Renmin University of China & ²Tencent</span>
           
           
         </div>
@@ -121,16 +121,22 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2">
         <p>
-          ChinaOpen sourced from <i>Bilibili</i>, a popular Chinese video-sharing website, for open-world multimodal learning. 
-          It contains <b>ChinaOpen-50k</b> for  Multimodal learning pre-training and <b>ChinaOpen-1k</b> for multi-task evaluation.  
-          <b>ChinaOpen-50k</b>, a webly annotated training set of 50k videos associated with user-generated titles and tags. 
-          Both text-based and content-based data cleaning are performed to remove low-quality videos in advance. 
-          
-          <b>ChinaOpen-1k</b>, a manually labeled test set of 1k videos, wherein each video is accompanied with a manually checked user title and a manually written caption. 
-          Besides, each test video is manually tagged to describe what visual entities / actions / scenes are present in the visual content. 
-          The original user tags are also manually checked. Moreover, with all the Chinese text translated into English, 
-          <b>ChinaOpen-1k</b> is also suited for evaluating models trained on English data. 
+          ChinaOpen is a new video dataset targeted at open-world multimodal learning, 
+          with raw data gathered from Bilibili, a popular Chinese video-sharing website. 
+          The dataset has a large webly annotated training set of videos (associated with user-generated titles and tags) 
+          and a smaller manually annotated test set of videos 
+          (with manually checked user titles / tags, manually written captions, and manual labels describing what visual 
+          objects / actions / scenes shown in the visual content).
         </p>
+        <br>
+        <p>
+          <b>Milestone</b>
+        </p>
+        <p style="font-size: 15px;">[2023/05/09] ChinaOpen-v1.0: ChinaOpen-50k for training + ChinaOpen-1k for test
+
+        </p>
+        <br>
+        <img src="./image/diagram.png" width="750px" height="200px" alt="diagram">
       </div>
       <div class="col-lg-12 text-center">
         <h3>Basic Statistics</h3>
@@ -268,13 +274,22 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 text-center">
         <div class="btn-group2">
+          <a href="http://arxiv.org/abs/1604.02748" class="btn btn-lg btn-outline">
+            <i class="fa fa-download">ChinaOpen-1k: [annotations in json (872 KB)]</i> 
+          </a>
+          <a href="http://arxiv.org/abs/1604.02748" class="btn btn-lg btn-outline">
+            <i class="fa fa-download">ChinaOpen-1k: [MP4 videos (1.72 GB)]</i> 
+          </a>
+          <a href="http://arxiv.org/abs/1604.02748" class="btn btn-lg btn-outline">
+            <i class="fa fa-download">ChinaOpen-50k: [annotations in json (XXX KB)]</i> 
+          </a>
+
+          <a href="http://arxiv.org/abs/1604.02748" class="btn btn-lg btn-outline">
+            <i class="fa fa-download">ChinaOpen-50k: [video-urls (XXX KB)]</i> 
+          </a>
           
           <a href="http://arxiv.org/abs/1604.02748" class="btn btn-lg btn-outline">
             <i class="fa fa-download"></i> Research Paper
-          </a>
-          
-          <a href="https://github.com/raingo/TGIF-Release/archive/master.zip" class="btn btn-lg btn-outline">
-            <i class="fa fa-download"></i> Dataset
           </a>
           
           <a href="https://github.com/raingo/TGIF-Release/tree/master/code/gif2txt-lstm" class="btn btn-lg btn-outline">
@@ -282,7 +297,7 @@
           </a>
           
           <a href="https://github.com/raingo/TGIF-Release/tree/master/code/gif2txt-lstm" class="btn btn-lg btn-outline">
-            <i class="fa fa-download"></i> Pretrained model
+            <i class="fa fa-download"></i> Model checkpoints
           </a>
           
         </div>
@@ -308,7 +323,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2>Data Examples</h2>
+        <h2>Examples</h2>
         <h4>ChinaOpen-50K</h4>
         <hr class="star-primary">
       </div>
@@ -356,6 +371,17 @@
           <div class="caption">
             <p style="font-size: 15px;"><b>User title: </b><br>
               事实证明，泡面可以修复一切
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail fixed-panel-50k">
+          <img class="img-responsive img-fixed" src="./video/gif-50k/BV11x411D7Sp.gif" alt="A well-dressed young guy with gelled red hair glides across a room and scans it with his eyes." />
+          <div class="caption">
+            <p style="font-size: 15px;"><b>User title: </b><br>
+              柯基之歌，感觉被洗脑了
             </p>
           </div>
         </div>
@@ -637,7 +663,8 @@
                         <p>
                           No. 59 Zhongguancun Street <br>
                           Haidian District Beijing, 100872, P.R.<br>
-                          <i class="fa fa-envelope" aria-hidden="true"></i> ChinaEmail: xirong@ruc.edu.cn <br>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> Aozhu Chen: xxx@ruc.edu.cn <br>
+                          <i class="fa fa-envelope" aria-hidden="true"></i> Ziyuan Wang: 2018202141@ruc.edu.cn <br>
 		                    
                         </p>
                     </div>
